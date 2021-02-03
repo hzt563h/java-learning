@@ -17,8 +17,12 @@ public class ThreadLocalExample {
      * 这种处理方式的广泛应用使得很多 Web 服务端应用都可以使用线程本地存储来解决线程安全问题。
      *
      * 可以使用 java.lang.ThreadLocal 类来实现线程本地存储功能。
+     * 在一些场景 (尤其是使用线程池) 下，由于 ThreadLocal.ThreadLocalMap 的底层数据结构导致 ThreadLocal
+     * 有内存泄漏的情况，应该尽可能在每次使用 ThreadLocal 后手动调用 remove()，
+     * 以避免出现 ThreadLocal 经典的内存泄漏甚至是造成自身业务混乱的风险。
      * @param args
      */
+
     public static void main(String[] args) {
         ThreadLocal threadLocal = new ThreadLocal();
         Thread thread1 = new Thread(() -> {
