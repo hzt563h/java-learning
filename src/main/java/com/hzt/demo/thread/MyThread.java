@@ -8,6 +8,7 @@ package com.hzt.demo.thread;
  * @createTime 2021年02月02日 20:30:00
  */
 public class MyThread implements Runnable {
+    @Override
     public void run() {
         System.out.println("我是另一个线程");
     }
