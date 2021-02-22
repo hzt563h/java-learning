@@ -8,4 +8,7 @@ package com.hzt.demo;
  * @createTime 2021年02月02日 20:29:00
  */
 public class Main {
+    public static void main(String[] args) {
+        System.out.println(14 ^ 3);
+    }
 }
