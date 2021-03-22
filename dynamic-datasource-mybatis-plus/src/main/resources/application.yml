@@ -1,0 +1,37 @@
+spring:
+  datasource:
+    connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
+    driverClassName: com.mysql.cj.jdbc.Driver
+    filters: stat,wall,slf4j
+    initial-size: 5
+    master:
+      password: 123456
+      url: jdbc:mysql://localhost/test?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai&useSSL=false
+      username: root
+    max-active: 20
+    max-pool-prepared-statement-per-connection-size: 20
+    max-wait: 60000
+    min-evictable-idle-time-millis: 300000
+    min-idle: 5
+    pool-prepared-statements: true
+    slave:
+      password: 123456
+      url: jdbc:mysql://localhost:13308/test?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai&useSSL=false
+      username: root
+    stat-view-servlet:
+      allow: 127.0.0.1
+      deny: ''
+      login-password: 123456
+      login-username: admin
+      reset-enable: false
+      url-pattern: /druid/*
+    test-on-borrow: false
+    test-on-return: false
+    test-while-idle: true
+    time-between-eviction-runs-millis: 60000
+    use-global-data-source-stat: true
+    validation-query: SELECT 1 FROM DUAL
+    web-stat-filter:
+      enabled: true
+      exclusions: '*.js,*.gif,*.jpg,*.bmp,*.png,*.css,*.ico,/druid/*'
+      url-pattern: /*
