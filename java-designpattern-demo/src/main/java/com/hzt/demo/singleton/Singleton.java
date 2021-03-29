@@ -1,4 +1,4 @@
-package com.hzt.demo.designpattern.singleton;
+package com.hzt.demo.singleton;
 
 /**
  * @author huangzetao

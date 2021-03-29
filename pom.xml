@@ -9,6 +9,8 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>dynamic-datasource-mybatis-plus</module>
+        <module>basis-java-demo</module>
+        <module>java-designpattern-demo</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
