@@ -11,6 +11,7 @@
         <module>dynamic-datasource-mybatis-plus</module>
         <module>basis-java-demo</module>
         <module>java-designpattern-demo</module>
+        <module>leetcode-learning-demo</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
