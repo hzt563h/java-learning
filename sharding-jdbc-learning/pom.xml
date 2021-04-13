@@ -35,20 +35,19 @@
             <artifactId>mybatis-plus-boot-starter</artifactId>
             <version>3.3.1</version>
         </dependency>
-        <!--shardingsphere start-->
-        <!-- for spring boot -->
+
         <dependency>
-            <groupId>io.shardingsphere</groupId>
+            <groupId>org.apache.shardingsphere</groupId>
             <artifactId>sharding-jdbc-spring-boot-starter</artifactId>
-            <version>4.1.0</version>
+            <version>4.0.0-RC1</version>
         </dependency>
-        <!-- for spring namespace -->
+
         <dependency>
-            <groupId>io.shardingsphere</groupId>
+            <groupId>org.apache.shardingsphere</groupId>
             <artifactId>sharding-jdbc-spring-namespace</artifactId>
-            <version>3.1.0</version>
+            <version>4.0.0-RC1</version>
         </dependency>
-        <!--shardingsphere end-->
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
@@ -58,9 +57,10 @@
         <!--alibaba 连接池-->
         <dependency>
             <groupId>com.alibaba</groupId>
-            <artifactId>druid-spring-boot-starter</artifactId>
-            <version>1.1.10</version>
+            <artifactId>druid</artifactId>
+            <version>1.2.1</version>
         </dependency>
+
 
 
     </dependencies>

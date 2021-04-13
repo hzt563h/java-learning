@@ -19,11 +19,21 @@ import java.util.List;
 @RestController
 public class UserController {
 
+    @Autowired
+    private UserService userService;
 
     @GetMapping("/select")
     public List<User> select() {
-        return null;
+        return userService.getUserList();
     }
 
+    @GetMapping("/insert")
+    public Boolean insert() {
+        User user = new User();
+        user.setName("test");
+        user.setEmail("123@qq.com");
+        user.setAge(15);
+        return userService.insertUser(user);
+    }
 
 }

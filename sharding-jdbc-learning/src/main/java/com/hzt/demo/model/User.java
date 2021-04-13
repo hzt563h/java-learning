@@ -19,7 +19,6 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @TableName("user")
 public class User {
-    @TableId(value = "id")
     private Long id;
     private String name;
     private Integer age;
