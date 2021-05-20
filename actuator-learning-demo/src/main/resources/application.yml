@@ -1,0 +1,13 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: spring-demo
+management:
+  endpoints:
+    web:
+      exposure:
+        include: 'prometheus' # 暴露/actuator/prometheus
+  metrics:
+    tags:
+      application: ${spring.application.name} # 暴露的数据中添加application label

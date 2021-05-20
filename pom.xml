@@ -14,6 +14,10 @@
         <module>leetcode-learning-demo</module>
         <module>lock-java-learning</module>
         <module>sharding-jdbc-learning</module>
+        <module>redis-learning-demo</module>
+        <module>jvm-learning-demo</module>
+        <module>groovy-learning-demo</module>
+        <module>actuator-learning-demo</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
