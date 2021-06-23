@@ -18,6 +18,7 @@
         <module>jvm-learning-demo</module>
         <module>groovy-learning-demo</module>
         <module>actuator-learning-demo</module>
+        <module>mybatis-plus-learning-demo</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>

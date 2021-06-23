@@ -1,13 +1,28 @@
 server:
-  port: 8888
+  port: 8086
 spring:
   application:
-    name: spring-demo
+    name: spring-demo-test
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: 'prometheus' # 暴露/actuator/prometheus
+#  metrics:
+#    tags:
+#      application: ${spring.application.name} # 暴露的数据中添加application label
 management:
+  endpoint:
+    metrics:
+      enabled: true
+    prometheus:
+      enabled: true
   endpoints:
+    enabled-by-default: true
     web:
       exposure:
-        include: 'prometheus' # 暴露/actuator/prometheus
+        include: '*'
   metrics:
-    tags:
-      application: ${spring.application.name} # 暴露的数据中添加application label
+    export:
+      prometheus:
+        enabled: true
