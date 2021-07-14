@@ -2,6 +2,14 @@ server:
   port: 8082
   servlet:
     context-path: /
+  tomcat:
+    accept-count: 100 #排队连接数
+    # 连接超时时间
+    connection-timeout: 1000
+    # 最大连接数，可以适应 APR 模式
+    max-connections: 8192
+    max-threads: 800
+
 
 spring:
   datasource:
